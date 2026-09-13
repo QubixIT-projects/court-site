@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact Us &mdash; The Court</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+
+<header class="site">
+  <a class="brand" href="index.html">
+    <div class="name display">THE <span class="accent">COURT</span></div>
+    <div class="tag mono">RACKET SPORTS OUTFITTERS</div>
+  </a>
+  <nav class="page-nav mono" id="page-nav">
+    <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="current">Contact</a>
+  </nav>
+  <div class="nav-scrim" id="nav-scrim"></div>
+  <a class="nav-cta mono" href="products.html">Shop Now</a>
+  <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="page-head">
+  <h1 class="display">Get in Touch</h1>
+  <p>Questions about stock, restringing or an order reach us however's easiest, or drop by the shop floor.</p>
+</div>
+
+<div class="contact-wrap">
+  <div>
+    <div class="info-block">
+      <h4 class="mono">VISIT THE SHOP</h4>
+      <div class="line">The Court Sports (Pvt) Ltd</div>
+      <div class="sub">142 Galle Road, Colombo 03, Sri Lanka</div>
+    </div>
+
+    <div class="info-block">
+      <h4 class="mono">CALL OR EMAIL</h4>
+      <div class="line"><a href="tel:+94112345678">011 234 5678</a></div>
+      <div class="line"><a href="tel:+94771234567">077 123 4567</a></div>
+      <div class="line"><a href="mailto:hello@thecourt.lk">hello@thecourt.lk</a></div>
+    </div>
+
+    <div class="info-block">
+      <h4 class="mono">SHOP HOURS</h4>
+      <table class="hours-table mono">
+        <tr><td>Monday – Friday</td><td>9:30 AM – 7:00 PM</td></tr>
+        <tr><td>Saturday</td><td>9:30 AM – 6:00 PM</td></tr>
+        <tr><td>Sunday</td><td>10:00 AM – 4:00 PM</td></tr>
+      </table>
+    </div>
+
+    <div class="info-block">
+      <h4 class="mono">FOLLOW US</h4>
+      <div class="social-row mono">
+        <a class="social-pill" href="#">Instagram</a>
+        <a class="social-pill" href="#">Facebook</a>
+        <a class="social-pill" href="#">TikTok</a>
+      </div>
+    </div>
+
+    <!-- REPLACE: storefront photo or embedded map screenshot. Drop a file at images/contact/map.jpg -->
+    <div class="map-block">
+      <img src="5.jpg" alt="The Court storefront, 142 Galle Road, Colombo 03"
+           onerror="this.onerror=null;this.src='https://picsum.photos/seed/thecourt-map/600/400';">
+      <span class="map-label mono">142 GALLE ROAD, COLOMBO 03</span>
+    </div>
+  </div>
+
+  <form class="contact-form" id="contact-form">
+    <h3 class="display">Send us a message</h3>
+    <div class="field-row">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your name" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="you@example.com" required />
+      </div>
+    </div>
+    <div class="field">
+      <label for="topic">What's this about?</label>
+      <select id="topic">
+        <option>Product availability</option>
+        <option>Restringing service</option>
+        <option>Order status</option>
+        <option>Something else</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Tell us what you need" required></textarea>
+    </div>
+    <button class="submit-btn" type="submit">SEND MESSAGE</button>
+    <div class="form-note">We usually reply within one business day.</div>
+  </form>
+</div>
+
+<div id="toast"></div>
+
+<footer class="site">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <div class="name display">THE <span style="color:var(--lime);">COURT</span></div>
+      <p>Racket sports gear for badminton, tennis, squash, paddle and table tennis players across Sri Lanka.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>SHOP</h4>
+        <a href="index.html">3D Shop</a>
+        <a href="products.html">Full Catalog</a>
+      </div>
+      <div class="footer-col">
+        <h4>COMPANY</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mono">&copy; 2026 The Court. All rights reserved | Designed & Developed by Qubix IT</div>
+</footer>
+
+<script src="js/contact.js"></script>
+
+</body>
+</html>

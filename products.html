@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Products &mdash; The Court</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+<header class="site">
+  <a class="brand" href="index.html">
+    <div class="name display">THE <span class="accent">COURT</span></div>
+    <div class="tag mono">RACKET SPORTS OUTFITTERS</div>
+  </a>
+  <nav class="page-nav mono" id="page-nav">
+    <button class="nav-close" id="nav-close" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="products.html" class="current">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-scrim" id="nav-scrim"></div>
+  <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <button id="cart-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="#f3efe2" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+    <span class="mono" id="cart-count">0</span>
+  </button>
+</header>
+
+<div class="page-head">
+  <h1 class="display">Full Catalog</h1>
+  <p>Every racket, ball and pair of shoes from our 3D shop floor, laid out for a quicker browse. Prices in LKR, islandwide delivery.</p>
+</div>
+
+<div class="filters mono" id="filters"></div>
+<div class="grid" id="grid"></div>
+
+<div id="cart-drawer">
+  <div class="cart-head">
+    <h2>YOUR CART</h2>
+    <button class="panel-close" id="cart-close">&times;</button>
+  </div>
+  <div id="cart-items"></div>
+  <div class="cart-foot">
+    <div class="cart-line"><span>Items</span><span id="cart-item-count" class="mono">0</span></div>
+    <div class="cart-line total"><span>Total</span><span id="cart-total" class="mono">Rs 0</span></div>
+    <button id="checkout-btn">CHECK AVAILABILITY &amp; CHECKOUT</button>
+  </div>
+</div>
+<div id="scrim"></div>
+<div id="toast"></div>
+
+<footer class="site">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+      <div class="name display">THE <span style="color:var(--lime);">COURT</span></div>
+      <p>Racket sports gear for badminton, tennis, squash, paddle and table tennis players across Sri Lanka.</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>SHOP</h4>
+        <a href="index.html">3D Shop</a>
+        <a href="products.html">Full Catalog</a>
+      </div>
+      <div class="footer-col">
+        <h4>COMPANY</h4>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom mono">&copy; 2026 The Court. All rights reserved | Designed & Developed by Qubix IT</div>
+</footer>
+
+<script src="js/products.js"></script>
+</body>
+</html>
