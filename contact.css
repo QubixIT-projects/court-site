@@ -94,6 +94,7 @@
 
   @media (max-width: 760px){
 
+    .brand .tag{ display:none; }
     .contact-wrap{ grid-template-columns:1fr; }
     .page-head h1{ font-size:34px; }
   }
