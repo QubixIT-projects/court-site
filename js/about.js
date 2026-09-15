@@ -1,35 +1,26 @@
 // no page-specific script
 /* ============================================================
    HAMBURGER / MOBILE NAV (shared pattern across all pages)
+   Single source of truth: body.nav-open. CSS reacts to that class.
 ============================================================ */
 (function(){
   "use strict";
   function initMobileNav(){
     var hamburgerBtn = document.getElementById('hamburger-btn');
-    var pageNav = document.getElementById('page-nav');
     var navClose = document.getElementById('nav-close');
     var navScrim = document.getElementById('nav-scrim');
+    var pageNav = document.getElementById('page-nav');
     if(!hamburgerBtn || !pageNav) return;
 
-    function openNav(){
-      pageNav.classList.add('mobile-open');
-      if(navScrim) navScrim.classList.add('show');
-      hamburgerBtn.setAttribute('aria-expanded', 'true');
-    }
-    function closeNav(){
-      pageNav.classList.remove('mobile-open');
-      if(navScrim) navScrim.classList.remove('show');
-      hamburgerBtn.setAttribute('aria-expanded', 'false');
-    }
+    function openNav(){ document.body.classList.add('nav-open'); }
+    function closeNav(){ document.body.classList.remove('nav-open'); }
 
     hamburgerBtn.addEventListener('click', openNav);
     if(navClose) navClose.addEventListener('click', closeNav);
     if(navScrim) navScrim.addEventListener('click', closeNav);
-
     pageNav.querySelectorAll('a').forEach(function(link){
       link.addEventListener('click', closeNav);
     });
-
     window.addEventListener('resize', function(){
       if(window.innerWidth > 760) closeNav();
     });
